@@ -162,7 +162,7 @@
         'layer 1': [ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw', {id: 'mapbox.satellite'}), ],
         'layer 2': [ L.tileLayer('https://api.mapbox.com/styles/v1/nathanvc/cirx29kh00057gam862ziifyc/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmF0aGFudmMiLCJhIjoiY2lyeDI3dzU2MDA2eTJ6b2Zzc3o0aHYyZCJ9.uz49BJJoY2WmlDqeNw7SlQ', {detectRetina: true, color: 'orange', weight: 5}), '<i style="background: greenyellow; opacity: 0.5"></i><p><b>Park Boundary</b></p>'],
         'layer 3': [ L.tileLayer('https://api.mapbox.com/styles/v1/nathanvc/cj0fx870n00232skgpqhi869o/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmF0aGFudmMiLCJhIjoiY2lyeDI3dzU2MDA2eTJ6b2Zzc3o0aHYyZCJ9.uz49BJJoY2WmlDqeNw7SlQ' )],
-        'crnt': [ L.geoJson.ajax('faas.geojson',  {
+        'crnt': [ L.geoJson.ajax('viewshed.geojson',  {
             color: 'green',
             weight: 1,
             fillOpacity: .8,
