@@ -206,7 +206,7 @@
                 <p>Green areas represent the area visible from the Opposite Hill alternative site.
                 </p>
             </section>
-            <section data-scene="scene15">
+            <section data-scene="scene14">
                 <h2>Problem:</h2>
                 <h2>Each alternative site is missing large areas the current site is not!</h2>
             </section>
@@ -256,9 +256,15 @@
             </section>
             <section data-scene="scene21">
                 <h2>West Point + Mary's Peak east</h2>
-                <p></p>
             </section>
             <section data-scene="scene22">
+                <h2>West Point + Mary's Peak east</h2>
+                <p>Net Gain: -2,473,581</p>
+                <p>Net Gain: -732,683</p>
+                <p>Net Gain: -1,735,462</p>
+                <h2>Net Gain: 187,930</h2>
+            </section>
+            <section data-scene="scene23">
                 <h2>Conclusion</h2>
                 <p>
                     Using the results of this viewshed analysis of Mary’s Peak, the WestPoint+MP_west option is the best
@@ -336,7 +342,7 @@
             weight: 1,
             fillOpacity: .8,
             opacity: 1})],
-        'wspnt_ophilL': [ L.geoJson.ajax('wspnt_ophilL.geojson',  {
+        'wstpnt_ophilL': [ L.geoJson.ajax('wstpnt_ophilL.geojson',  {
             color: 'red',
             weight: 1,
             fillOpacity: .8,
@@ -389,30 +395,33 @@
 //        Comparrisons
         scene9: {lat: 44.5057364, lng: -123.5744294, zoom: 14, layers: ['layer 1', 'faa','wstpnt','ophil','mpwst']},
 //        How viewshed works
-        scene10: {lat: 44.5057364, lng: -123.5744294, zoom: 14, layers: ['layer 3', 'faa','wstpnt','ophil','mpwst']},
-//        Results
-        scene11: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','wstpntS','wstpnt',]},
+        scene10: {lat: 44.9554349, lng: -124.2363408, zoom: 8, layers: ['layer 1','crntS','maryspeak']},
+//        Results: west point
+        scene11: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','wstpntS','wstpnt',]},
 //        FAA
-        scene12: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','faaS','faa']},
+        scene12: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','faaS','faa']},
 //        MPeast
-        scene13: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','mpwstS','mpwst']},
+        scene13: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','mpwstS','mpwst']},
 //        Ophil
-        scene14: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','ophilS','ophil']},
+        scene14: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','ophilS','ophil']},
 //        Problem
-        scene15: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','faaS','crnt','crnt','faa']},
+        scene15: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','faaS','crnt','crnt','faa']},
 //    Solution
-        scene16: {lat: 44.5057364, lng: -123.5744294, zoom: 10, layers: ['layer 3','faa','wstpnt','mpwst','ophil']},
+        scene16: {lat: 44.5057364, lng: -123.5744294, zoom: 14, layers: ['layer 3','faa','wstpnt','mpwst','ophil']},
 //        Result: faa + opphill
-        scene17: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','faa_ophilC','faa_ophilL','faa_ophilG','faa','ophil']},
+        scene17: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','faa_ophilL','faa_ophilG','faa','ophil']},
 //        faa + marys peak
-        scene18: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','faa_mpwstC','faa_mpwstL','faa_mpwstG','faa','mpwst']},
+        scene18: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','faa_mpwstL','faa_mpwstG','faa','mpwst']},
 //        wstpnt+ophil
-        scene19: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','wstpnt_ophilC','wstpnt_ophilL','wstpnt_ophilG','wstpnt','ophil']},
+        scene19: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','wstpnt_ophilL','wstpnt_ophilG','wstpnt','ophil']},
 //        wstpnt + maryspeak
-        scene20: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','wstpnt_mpwstC','wstpnt_mpwstL','wstpnt_mpwstG','wstpnt','mpwst']},
-
-        scene21: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','crnt','maryspeak']},
-        scene22: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','crnt','maryspeak']},
+        scene20: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','wstpnt_mpwstL','wstpnt_mpwstG','wstpnt','mpwst']},
+//        west point = mary's perk east zoomed in
+        scene21: {lat: 44.5057364, lng: -123.5744294, zoom: 15, layers: ['layer 1','wstpnt','mpwst']},
+//         West Point + Marys Peak east zoomed out
+        scene22: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','wstpnt_mpwstC','wstpnt_mpwstL','wstpnt_mpwstG','wstpnt','mpwst']},
+//         Conclusion
+        scene23: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','crntS','wstpnt_mpwstC','maryspeak']}
 
     };
 
