@@ -67,7 +67,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-6 col-md-4 main">
-            <h2 class="page-header">Alternative Locations for Communication Equipment On Mary's Peak<br/></h2>
+            <h2 class="page-header">Alternative Locations for Communications Equipment On Mary's Peak<br/></h2>
                 <div class="subtitle">An analysis of viewsheds for alternative sites </div>
             <section data-scene="scene1">
                 <h2>Mary's Peak</h2>
@@ -184,6 +184,9 @@
                     For this analysis an 10 meter resolution NED (National Elevation Dataset) DEM from the USGS was used.
                     This particular DEM was created by photogrammetric methods.
                 </p>
+                <p>
+                    Shown here in red is the current communication's site viewshed.
+                </p>
             </section>
             <section data-scene="scene11">
                 <h2>Results:</h2>
@@ -285,8 +288,8 @@
 
     var layers = {
         'layer 1': [ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw', {id: 'mapbox.satellite'}), ],
-        'layer 2': [ L.tileLayer('https://api.mapbox.com/styles/v1/nathanvc/cirx29kh00057gam862ziifyc/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmF0aGFudmMiLCJhIjoiY2lyeDI3dzU2MDA2eTJ6b2Zzc3o0aHYyZCJ9.uz49BJJoY2WmlDqeNw7SlQ', {detectRetina: true, color: 'orange', weight: 5}), '<i style="background: greenyellow; opacity: 0.5"></i><p><b>Park Boundary</b></p>'],
-        'layer 3': [ L.tileLayer('https://api.mapbox.com/styles/v1/nathanvc/cj0fx870n00232skgpqhi869o/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmF0aGFudmMiLCJhIjoiY2lyeDI3dzU2MDA2eTJ6b2Zzc3o0aHYyZCJ9.uz49BJJoY2WmlDqeNw7SlQ' )],
+        'layer 2': [ L.tileLayer('https://api.mapbox.com/styles/v1/nathanvc/cj0fx870n00232skgpqhi869o/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmF0aGFudmMiLCJhIjoiY2lyeDI3dzU2MDA2eTJ6b2Zzc3o0aHYyZCJ9.uz49BJJoY2WmlDqeNw7SlQ', {detectRetina: true, color: 'orange', weight: 5}), '<i style="background: greenyellow; opacity: 0.5"></i><p><b>Park Boundary</b></p>'],
+        'layer 3': [ L.tileLayer('https://api.mapbox.com/styles/v1/nathanvc/cj0fx870n00232skgpqhi869o/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmF0aGFudmMiLCJhIjoiY2lyeDI3dzU2MDA2eTJ6b2Zzc3o0aHYyZCJ9.uz49BJJoY2WmlDqeNw7SlQ', {detectRetina: true, color: 'orange', weight: 5}), '<i style="background: greenyellow; opacity: 0.5"></i><p><b>Park Boundary</b></p>'],
         'crntS': [ L.geoJson.ajax('crnt.geojson',  {
             color: 'red',
             weight: 1,
